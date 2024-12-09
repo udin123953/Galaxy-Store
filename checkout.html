@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalaxyStore - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Galaxy Store</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="checkout.html" class="active">Checkout</a>
+                <a href="payment.html">Payment</a>
+                <a href="thankyou.html">Thank You</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="checkout-section">
+            <h2>Checkout</h2>
+            <div class="checkout-container">
+                <form action="payment.html" method="GET">
+                   
+                    <div class="form-group">
+                        <label for="amount">pilih Diamonds</label>
+                        <select id="amount" name="amount">
+                            <option value="100">100  (Rp30.0000)</option>
+                            <option value="200">200  (Rp50.000)</option>
+                            <option value="500">500  (Rp100.000)</option>
+                            <option value="1000">1000  (Rp175.000)</option>
+                            <option value="1500">1500  (Rp250.000)</option>
+                            <option value="2000">2000  (Rp300.000)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="server">id dan server</label>
+                        <input type="text" id="server" name="server" placeholder="Enter your game server" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">confirmasi</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GalaxyStore. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+

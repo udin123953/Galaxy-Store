@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalaxyStore - Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Galaxy Store</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="payment.html" class="active">Payment</a>
+                <a href="thankyou.html">Thank You</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="payment-section">
+            <h2>pilih pembayaran</h2>
+            <p>membayar menggunakan:</p>
+            <div class="payment-options">
+                <div class="payment-method" onclick="selectPayment('Qris')">
+                    <img src="qris.jpg" alt="Qris">
+                    <h3>Qris</h3>
+                </div>
+                <div class="payment-method" onclick="selectPayment('Alfamart')">
+                    <img src="alfamart.jpg" alt="Alfamart">
+                    <h3>Alfamart</h3>
+                </div>
+                <div class="payment-method" onclick="selectPayment('Bank Transfer')">
+                    <img src="bank transfer.jpg" alt="Bank Transfer">
+                    <h3>Bank Transfer</h3>
+                </div>
+                <div class="payment-method" onclick="selectPayment('E-Wallet')">
+                    <img src="e wallet.jpg" alt="E-Wallet">
+                    <h3>E-Wallet</h3>
+                </div>
+            </div>
+
+            <div id="selected-payment" class="selected-payment">
+                <h3>menggunakan:</h3>
+                <p id="payment-method-name">None</p>
+                <button id="confirm-button" onclick="confirmPayment()" disabled>Confirm</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GalaxyStore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
